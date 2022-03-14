@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(197, 197, 197);
+    background-image: url(../Image/Game.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+#container{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.line{
+    direction: rtl;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    height: 40px;
+    padding: auto;
+    margin-bottom: 20px;
+    width: 180px;
+    border-radius: 20px;
+}
+.line p {
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(76, 0, 255);
+}
+#video-box video{
+    border: 3px solid rgb(39, 64, 77);
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 50px;
+    margin-top: 10px;
+    width: 50%;
+    box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+#download-id{
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline rgb(255, 0, 200);
+    margin-right: 30px;
+    margin-top: -50px;
+}
+#download-id a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.897);
+}
+#download-id a:hover{
+    color: rgb(255, 0, 200);
+}
+/* navigation */
+.main a{
+   text-decoration: none;
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+nav ul li {
+   font-size: 40px;
+   font-family: sans-serif;
+   background-color: rgb(116, 255, 209);
+   border: 2px solid rgb(0, 135, 139);
+   letter-spacing: 0.1em;
+   width: 180px;
+   height: 55px;
+   line-height: 1.5em;
+   position: relative;
+   overflow: hidden;
+   margin: 0.5em;
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+nav ul li span {
+   color: rgb(115, 255, 0);
+   mix-blend-mode: difference;
+}
+
+nav ul li::before {
+   content: '';
+   position: absolute;
+   width: 65px;
+   height: inherit;
+   background-color: rgb(9, 255, 194);
+   border-radius: 50%;
+   top: 0;
+   left: -0.75em;
+   transition: 0.5s ease-out;
+}
+
+nav ul li:hover::before {
+   transform: scale(7);
+}
+
+/* responsive */
+
+
+@media (max-width: 700px){
+    #video-box video{
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 700px){
+    #video-box video{
+        width: 70%;
+    }
+}
+
+@media (max-width: 560px){
+    #download-id{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 500px){
+    #download-id{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    #download-id{
+        font-size: 15px;
+    }
+    .line p{
+        font-size: 15px;
+    }
+    .line{
+        height: 22px;
+        width: 160px;
+    }
+}
+
+@media (max-width: 380px){
+    #download-id{
+        font-size: 10px;
+    }
+    .line p{
+        font-size: 15px;
+    }
+    .line{
+        height: 15px;
+        width: 140px;
+    }
+}
